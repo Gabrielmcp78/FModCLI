@@ -18,16 +18,33 @@
 
 ### Installation
 
-#### Build from Source
+#### Option 1: Automatic Installation (Recommended)
+
 ```bash
-git clone https://github.com/yourusername/FModCLI.git
+git clone https://github.com/Gabrielmcp78/FModCLI.git
+cd FModCLI
+./install.sh
+```
+
+The script will automatically:
+- ✅ Check system requirements
+- 🔨 Build the project  
+- 🧪 Test the binary
+- 📦 Offer installation options (system-wide, user-local, or build-only)
+- 🚀 Set up everything for you!
+
+#### Option 2: Manual Installation
+
+Build from source:
+```bash
+git clone https://github.com/Gabrielmcp78/FModCLI.git
 cd FModCLI
 swift build -c release
 ```
 
-The compiled binary will be available at `.build/release/fmodcli`.
+Then choose an installation method:
 
-#### Install System-Wide (Recommended)
+**System-Wide Installation (Recommended)**
 
 To use `fmodcli` from anywhere in your terminal:
 
