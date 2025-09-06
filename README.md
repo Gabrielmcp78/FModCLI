@@ -27,13 +27,13 @@
 git clone https://github.com/yourusername/FModCLI.git
 cd FModCLI
 swift build -c release
+# Binary will be at .build/release/fmodcli
 ```
 
 #### Option 2: Direct Download
 ```bash
-# Download the latest release binary
-curl -L https://github.com/yourusername/FModCLI/releases/latest/download/fmodcli -o fmodcli
-chmod +x fmodcli
+# Note: Pre-built binaries will be available after first release
+# For now, use Swift Package Manager to build from source
 ```
 
 ### Basic Usage
@@ -87,8 +87,8 @@ fmodcli --help
 
 ## 🛠️ Requirements
 
-- **macOS 10.15+** (Catalina or later)
-- **Apple Intelligence compatible device** (M1/M2/M3 Macs, macOS 26.0+ for full functionality)
+- **macOS 26.0+** (required for Apple Intelligence and FoundationModels framework)
+- **Apple Intelligence compatible device** (M1/M2/M3 Macs recommended for optimal performance)
 - **Swift 6.0+** (for building from source)
 
 ## 🏗️ Architecture
@@ -169,9 +169,9 @@ FModCLI is designed with privacy as a core principle:
 
 ## ⚠️ Compatibility Notes
 
-- **Apple Intelligence features** require macOS 26.0+ and compatible hardware
-- **Basic functionality** works on macOS 10.15+ for broader compatibility
-- **M-series Macs** provide optimal performance for AI operations
+- **Apple Intelligence and FoundationModels** require macOS 26.0+ and compatible hardware
+- **M1/M2/M3 Macs** provide the best performance and compatibility for AI operations
+- **Intel Macs** may have limited or no Apple Intelligence support
 
 ## 📄 License
 
