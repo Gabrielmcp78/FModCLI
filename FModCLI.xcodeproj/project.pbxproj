@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4314F4622E5BD9EE0015D612 /* FoundationModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4314F4612E5BD9EE0015D612 /* FoundationModels.framework */; };
+		4314F4732E5BF1330015D612 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 4314F4722E5BF1330015D612 /* ArgumentParser */; };
+		4314F4752E5BF1330015D612 /* generate-docc-reference in Frameworks */ = {isa = PBXBuildFile; productRef = 4314F4742E5BF1330015D612 /* generate-docc-reference */; };
+		4314F4772E5BF1330015D612 /* generate-manual in Frameworks */ = {isa = PBXBuildFile; productRef = 4314F4762E5BF1330015D612 /* generate-manual */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4314F4542E5BD9E00015D612 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		4314F4562E5BD9E00015D612 /* FModCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FModCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		4314F4612E5BD9EE0015D612 /* FoundationModels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoundationModels.framework; path = System/Library/Frameworks/FoundationModels.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4314F4732E5BF1330015D612 /* ArgumentParser in Frameworks */,
+				4314F4772E5BF1330015D612 /* generate-manual in Frameworks */,
+				4314F4622E5BD9EE0015D612 /* FoundationModels.framework in Frameworks */,
+				4314F4752E5BF1330015D612 /* generate-docc-reference in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4314F4582E5BD9E00015D612 /* FModCLI */,
+				4314F4602E5BD9EE0015D612 /* Frameworks */,
 				4314F4572E5BD9E00015D612 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +68,14 @@
 				4314F4562E5BD9E00015D612 /* FModCLI */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4314F4602E5BD9EE0015D612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4314F4612E5BD9EE0015D612 /* FoundationModels.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +98,9 @@
 			);
 			name = FModCLI;
 			packageProductDependencies = (
+				4314F4722E5BF1330015D612 /* ArgumentParser */,
+				4314F4742E5BF1330015D612 /* generate-docc-reference */,
+				4314F4762E5BF1330015D612 /* generate-manual */,
 			);
 			productName = FModCLI;
 			productReference = 4314F4562E5BD9E00015D612 /* FModCLI */;
@@ -106,6 +130,9 @@
 			);
 			mainGroup = 4314F44D2E5BD9E00015D612;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4314F4712E5BF1330015D612 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4314F4572E5BD9E00015D612 /* Products */;
 			projectDirPath = "";
@@ -295,6 +322,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4314F4712E5BF1330015D612 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4314F4722E5BF1330015D612 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4314F4712E5BF1330015D612 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		4314F4742E5BF1330015D612 /* generate-docc-reference */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4314F4712E5BF1330015D612 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = "generate-docc-reference";
+		};
+		4314F4762E5BF1330015D612 /* generate-manual */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4314F4712E5BF1330015D612 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = "generate-manual";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4314F44E2E5BD9E00015D612 /* Project object */;
 }
