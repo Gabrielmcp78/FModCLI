@@ -25,14 +25,54 @@ cd FModCLI
 swift build -c release
 ```
 
-The compiled binary will be available at `.build/release/fmodcli`. You can then:
+The compiled binary will be available at `.build/release/fmodcli`.
+
+#### Install System-Wide (Recommended)
+
+To use `fmodcli` from anywhere in your terminal:
 
 ```bash
-# Run directly
-./.build/release/fmodcli "Hello, world!"
+# Copy to your PATH
+sudo cp .build/release/fmodcli /usr/local/bin/
 
-# Or copy to your PATH
-cp .build/release/fmodcli /usr/local/bin/
+# Make it executable (if needed)
+sudo chmod +x /usr/local/bin/fmodcli
+
+# Test the installation
+fmodcli --version
+```
+
+Now you can use `fmodcli` from any directory:
+
+```bash
+fmodcli "Hello, world!"
+```
+
+#### Alternative: User-Local Installation
+
+If you don't have admin rights or prefer user-local installation:
+
+```bash
+# Create local bin directory (if it doesn't exist)
+mkdir -p ~/.local/bin
+
+# Copy binary to user bin
+cp .build/release/fmodcli ~/.local/bin/
+
+# Add to your shell profile (if not already in PATH)
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# Test the installation
+fmodcli --version
+```
+
+#### Or Run Directly
+
+If you prefer not to install at all:
+
+```bash
+./.build/release/fmodcli "Hello, world!"
 ```
 
 ### Basic Usage
