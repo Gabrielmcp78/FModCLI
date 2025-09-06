@@ -7,18 +7,14 @@
 [![Apple Intelligence](https://img.shields.io/badge/Apple-Intelligence-black.svg)](https://developer.apple.com/machine-learning/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Unlock the power of Apple Intelligence from your terminal.** FModCLI provides a professional, production-ready interface to Apple's on-device FoundationModels, bringing cutting-edge AI capabilities directly to your command line.
+> **Unlock the power of Apple Intelligence from your terminal.** Professional, production-ready interface to Apple's on-device FoundationModels.
 
-## ✨ Features
+## 🚀 Installation & Quick Start
 
-- **🧠 Apple Intelligence Integration** - Direct access to on-device FoundationModels
-- **⚡ Zero-Latency Processing** - All computation happens locally on your Mac
-- **🔒 Privacy-First** - Your data never leaves your device
-- **📋 Multiple Output Formats** - Text, JSON, and structured responses
-- **🛠️ Developer-Friendly** - Clean APIs and comprehensive documentation
-- **🎯 Production Ready** - Professional error handling and robust architecture
-
-## 🚀 Quick Start
+### Requirements
+- **macOS 26.0+** (required for Apple Intelligence and FoundationModels framework)
+- **Apple Intelligence compatible device** (M1/M2/M3 Macs recommended for optimal performance)
+- **Swift 6.0+** (for building from source)
 
 ### Installation
 
@@ -52,6 +48,15 @@ fmodcli --output json "Summarize the key principles of good API design"
 # Creative writing
 fmodcli "Create a short story about an AI that discovers poetry"
 ```
+
+## ✨ Features
+
+- **🧠 Apple Intelligence Integration** - Direct access to on-device FoundationModels
+- **⚡ Zero-Latency Processing** - All computation happens locally on your Mac
+- **🔒 Privacy-First** - Your data never leaves your device
+- **📋 Multiple Output Formats** - Text, JSON, and structured responses
+- **🛠️ Developer-Friendly** - Clean APIs and comprehensive documentation
+- **🎯 Production Ready** - Professional error handling and robust architecture
 
 ## 📚 Examples
 
@@ -87,12 +92,6 @@ fmodcli examples
 # Get detailed help
 fmodcli --help
 ```
-
-## 🛠️ Requirements
-
-- **macOS 26.0+** (required for Apple Intelligence and FoundationModels framework)
-- **Apple Intelligence compatible device** (M1/M2/M3 Macs recommended for optimal performance)
-- **Swift 6.0+** (for building from source)
 
 ## 🏗️ Architecture
 
