@@ -1,0 +1,35 @@
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+xcuserdata/
+DerivedData/
+
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.mode2v3
+*.xcodeproj/*.perspectivev3
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+fmodcli
+*.dSYM/
+
+# Temporary files
+*~
+.#*
