@@ -22,18 +22,21 @@
 
 ### Installation
 
-#### Option 1: Swift Package Manager (Recommended)
+#### Build from Source
 ```bash
 git clone https://github.com/yourusername/FModCLI.git
 cd FModCLI
 swift build -c release
-# Binary will be at .build/release/fmodcli
 ```
 
-#### Option 2: Direct Download
+The compiled binary will be available at `.build/release/fmodcli`. You can then:
+
 ```bash
-# Note: Pre-built binaries will be available after first release
-# For now, use Swift Package Manager to build from source
+# Run directly
+./.build/release/fmodcli "Hello, world!"
+
+# Or copy to your PATH
+cp .build/release/fmodcli /usr/local/bin/
 ```
 
 ### Basic Usage
